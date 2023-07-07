@@ -51,6 +51,7 @@ aside .sidebar a{
     align-items: center;
     gap: 1rem;
     margin-left: 1rem;
+    width: 100%;
 }
 
 aside .sidebar a span{
@@ -392,4 +393,41 @@ main .recent-orders a{
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+/*==========MEDIA QUERIES==========*/
+
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 94%;
+        grid-template-columns: 5rem auto 20rem;
+    }
+
+    aside .logo img{
+        width: 5rem;
+    }
+
+    aside .sidebar h3{
+        display: none;
+    }
+
+    .sidebar a:hover span {
+        margin-left: 0.5rem;
+    }
+
+    main .insights{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    main .recent-orders{
+        width: 85%;
+        position: absolute;
+        left: 52%;
+        transform: translateX(-50%);
+    }
+
+    .recent-orders table tbody tr td:last-child{
+        display: none;
+    }
 }
