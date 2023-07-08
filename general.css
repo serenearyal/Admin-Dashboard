@@ -12,6 +12,9 @@
     --color-dark-varient: #677483;
     --color-background: #f6f6f9;
 
+    --box-shadow: 0 0 10px rgba(189, 187, 187, 0.3);
+    --box-shadow-dark: 0 0 30px rgba(189, 187, 187, 0.3);
+
     --card-border-radius: 2rem;
     --border-radius-1: 0.4rem;
     --border-radius-2: 0.8rem;
@@ -19,6 +22,17 @@
 
     --card-padding: 1.8rem;
     --padding-1: 1.2rem;
+}
+
+.dark-theme-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-varient: #a3bdcc;
+    --color-light: rgba(0,0,0,0.4);
+    --box-shadow: 0 0 10px var(--color-light);
+    --box-shadow-dark: 0 0 30px var(--color-light);
+
 }
 
 * {
